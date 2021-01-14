@@ -1,0 +1,151 @@
+/*      General style               */
+a {
+    color: rgba(0, 0, 0, 1);
+    display: block;
+    text-decoration: none;
+}
+/*      Slide show                  */
+.sld-shw {
+    display: flex;
+    width: 100%;
+    background-color: rgba(249, 203, 205, 0.5);
+    flex-direction: row;
+    overflow: hidden;
+}
+.sld-bcmg {
+    position: absolute;
+    width: 100%;
+    background-image: url("https://twinfinite.net/wp-content/uploads/2020/07/Watch-Dogs-Legion.jpg");
+    background-repeat: no-repeat;
+    background-size: 110%;
+    z-index: -1;
+    background-position-x: center;
+    background-position-y: center;
+}
+.sld-btn {
+    width: auto;
+}
+.sld-btn-chld {
+    color: rgba(69, 48, 40, 1);
+    cursor: pointer;
+    padding: 20px 30px;
+    background-color: rgba(0, 0, 0, 0);
+}
+.sld-btn-chld:first-child {
+    width: 30px;
+}
+.sld-btn-chld:last-child {
+    width: 30px;
+}
+.sld-btn-chld.hover {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(69, 48, 40, 1);
+}
+.sld-btn-chld.hover:first-child {
+    color: rgba(255, 255, 255, 1);
+}
+.sld-btn:first-child:first-child, .sld-btn:last-child:last-child {
+    font-size: 20px;
+}
+.sld-slds {
+    display: flex;
+    flex-direction: row;
+}
+.sld-chld {
+    width: 100%;
+}
+.sld-txt {
+    margin: auto;
+    padding: 10px;
+    width: 500px;
+    background-color: rgba(69, 48, 40, 0.75);
+    border-radius: 10px 0 10px 0;
+    text-align: center;
+}
+.sld-txt strong {
+    color: rgba(255, 255, 255, 1);
+    font-size: 30px;
+}
+.sld-txt span {
+    color: rgba(255, 0, 0, 1);
+    font-size: 30px;
+}
+/*      Header                      */
+.hdr {
+    display: flex;
+    background-color: rgba(249, 203, 205, 1);
+    flex-direction: row;
+}
+.lgo-hdr {
+    color: rgba(255, 255, 255, 1);
+    padding: 10px;
+    width: 75px;
+    font-family: arialnb;
+    font-size: 20px;
+    font-weight: bold;
+}
+.lgo-hdr span:first-child {
+    color: rgba(69, 48, 40, 1);
+}
+.lst-hdr {
+    display: flex;
+    margin: auto;
+    width: 504px;
+    flex-direction: row;
+    font-size: 20px;
+}
+.chld-lst-hdr {
+    color: rgba(255, 255, 255, 1);
+    margin: 0 5px;
+    padding: 10px;
+}
+.chld-lst-hdr:hover {
+    color: rgba(69, 48, 40, 1);
+    cursor: pointer;
+    padding: 10px 10px 6.5px 10px;
+    border-color: rgba(69, 48, 40, 1);
+    border-style: solid;
+    border-width: 0 0 3.5px 0;
+}
+/*      LOGO                        */
+.cls-1 {
+    fill:#fff;
+}
+.cls-2,.cls-5,.cls-9 {
+    fill:none;
+}
+.cls-2,.cls-5,.cls-8 {
+    stroke:#453028;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+}
+.cls-2 {
+    stroke-width:1.92px;
+}
+.cls-3 {
+    font-size:12.03px;
+}
+.cls-3,.cls-6,.cls-7,.cls-8 {
+    fill:#453028;
+}
+.cls-3,.cls-6 {
+    font-family:Oswald-Bold, Oswald Bold;
+    font-weight:700;
+}
+.cls-4 {
+    letter-spacing:-0.06em;
+}
+.cls-5 {
+    stroke-width:2.28px;
+}
+.cls-6 {
+    font-size:20.36px;
+}
+.cls-8 {
+    stroke-width:1.02px;
+}
+.cls-10 {
+    font-size:15.5px;
+    fill:#f4f1ea;
+    font-family:HamburgerHeaven;
+}
