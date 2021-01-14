@@ -16,7 +16,6 @@ a {
     position: absolute;
     width: 100%;
     background-image: url("https://twinfinite.net/wp-content/uploads/2020/07/Watch-Dogs-Legion.jpg");
-    background-repeat: no-repeat;
     background-size: 110%;
     z-index: -1;
     background-position-x: center;
@@ -73,6 +72,7 @@ a {
 /*      Header                      */
 .hdr {
     display: flex;
+    width: 100%;
     background-color: rgba(249, 203, 205, 1);
     flex-direction: row;
 }
@@ -89,7 +89,8 @@ a {
 }
 .lst-hdr {
     display: flex;
-    margin: auto;
+    float: right;
+    margin: 0 0 0 auto;
     width: 504px;
     flex-direction: row;
     font-size: 20px;
