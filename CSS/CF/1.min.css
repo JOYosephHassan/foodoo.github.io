@@ -25,26 +25,37 @@ a {
     width: auto;
 }
 .sld-btn-chld {
-    color: rgba(69, 48, 40, 1);
+    color: rgba(69, 48, 40, 0.75);
     cursor: pointer;
     padding: 20px 30px;
+    width: 30px;
     background-color: rgba(0, 0, 0, 0);
 }
-.sld-btn-chld:first-child {
-    width: 30px;
-}
-.sld-btn-chld:last-child {
-    width: 30px;
-}
 .sld-btn-chld.hover {
+    animation: sld-btn-chld1 0.25s;
     color: rgba(255, 255, 255, 1);
     background-color: rgba(69, 48, 40, 1);
 }
-.sld-btn-chld.hover:first-child {
-    color: rgba(255, 255, 255, 1);
+.sld-btn-chld.nothover {
+    animation: sld-btn-chld2 0.25s;
+    background-color: rgba(0, 0, 0, 0);
 }
-.sld-btn:first-child:first-child, .sld-btn:last-child:last-child {
-    font-size: 20px;
+@keyframes sld-btn-chld1 {
+    0% {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    100% {
+        background-color: rgba(69, 48, 40, 1);
+    }
+}
+@keyframes sld-btn-chld2 {
+    0% {
+        background-color: rgba(69, 48, 40, 1);
+    }
+    100% {
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
 }
 .sld-slds {
     display: flex;
@@ -56,10 +67,14 @@ a {
 .sld-txt {
     margin: auto;
     padding: 10px;
+    transition: background-color 0.25s;
     width: 500px;
     background-color: rgba(69, 48, 40, 0.75);
     border-radius: 10px 0 10px 0;
     text-align: center;
+}
+.sld-txt:hover {
+    background-color: rgba(69, 48, 40, 1);
 }
 .sld-txt strong {
     color: rgba(255, 255, 255, 1);
@@ -90,6 +105,7 @@ a {
 .lst-hdr {
     display: flex;
     float: right;
+    height: 43.2px;
     margin: 0 0 0 auto;
     width: 504px;
     flex-direction: row;
@@ -99,14 +115,15 @@ a {
     color: rgba(255, 255, 255, 1);
     margin: 0 5px;
     padding: 10px;
+    transition: padding 0.25s;
 }
 .chld-lst-hdr:hover {
-    color: rgba(69, 48, 40, 1);
+    color: rgba(249, 203, 205, 1);
     cursor: pointer;
-    padding: 10px 10px 6.5px 10px;
-    border-color: rgba(69, 48, 40, 1);
-    border-style: solid;
-    border-width: 0 0 3.5px 0;
+    height: calc(100% - 20px);
+    padding: 20px 10px;
+    background-color: rgba(69, 48, 40, 1);
+    border-radius: 0 0 10px 10px;
 }
 /*      LOGO                        */
 .cls-1 {
